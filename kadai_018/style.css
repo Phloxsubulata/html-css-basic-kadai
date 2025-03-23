@@ -1,0 +1,110 @@
+#top{
+  /* 横幅800px */
+  width: 800px;
+  /* 背景色#dcc9f4 */
+  background-color: #dcc9f4;
+  /* 上下に20pxの余白　中央配置 */
+  margin: 20px auto;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  /* <p>中央揃え */
+  text-align: center;
+}
+#top > p{
+  /* 横幅を親要素の20% */
+  width: 20%;
+  /* 背景色#ffd9df */
+  background-color: #ffd9df;
+  /* 中央揃え（オーダー外） */
+  margin: auto;
+  /* display inline-block */
+  display: inline-block;
+}
+#middle{
+  /* 横幅を800px */
+  width: 800px;
+  /* 高さを800px */
+  height: 800px;
+  /* 上下に20pxの余白と中央配置 */
+  margin: 20px auto;
+  /* padding: 10px; */
+  /* 背景色#ffd9df */
+  background-color: #ffd9df;
+  /* 子要素position用 */
+  position: relative;
+}
+#middle-child01{
+  /* 横幅200px */
+  width: 200px;
+  /* 高さ200px */
+  height: 200px;
+  /* 背景色#87ceeb */
+  background-color: #87ceeb;
+  /* 上から100px 左から100pxに配置 */
+  position: absolute;
+  top: 100px;
+  left: 100px;  
+}
+#middle-child02{
+  /* 横幅200px */
+  width: 200px;
+  /* 高さ200px */
+  height: 200px;
+  /* 背景色#87ceeb */
+  background-color: #87ceeb;
+  /* 上から300px 左から300pxに配置 */
+  position: absolute;
+  top: 300px;
+  left: 300px;
+}
+#middle-child03{
+  /* 横幅200px */
+  width: 200px;
+  /* 高さ200px */
+  height: 200px;
+  /* 背景色#87ceeb */
+  background-color: #87ceeb;
+  /* 上から500px 左から500pxに配置 */
+  position: absolute;
+  top: 500px;
+  left: 500px;
+}
+#bottom{
+  /* 横幅800px */
+  width: 800px;
+  /* 高さ300px */
+  height: 300px;
+  margin: 20px auto;
+  /* padding: 10px; */
+  /* 背景色#87ceeb */
+  background-color: #87ceeb;
+}
+#bottom-child01{
+  /* 横幅400px */
+  width: 400px;
+  /* 高さ100px */
+  height: 100px;
+  /* 背景色#e5dcf0 */
+  background-color: #e5dcf0;
+  position: relative;
+}
+#bottom-child02{
+  /* 横幅400px */
+  width: 400px;
+  /* 高さ100px */
+  height: 100px;
+  /* 背景色#e5dcf0 */
+  background-color: #e5dcf0;
+  position: relative;
+  left: 200px;
+}
+#bottom-child03{
+  /* 横幅400px */
+  width: 400px;
+  /* 高さ100px */
+  height: 100px;
+  /* 背景色#e5dcf0 */
+  background-color: #e5dcf0;
+  position: relative;
+  left: 400px;
+}
