@@ -5,8 +5,6 @@
   background-color: #dcc9f4;
   /* 上下に20pxの余白　中央配置 */
   margin: 20px auto;
-  padding-top: 20px;
-  padding-bottom: 20px;
   /* <p>中央揃え */
   text-align: center;
 }
@@ -16,7 +14,7 @@
   /* 背景色#ffd9df */
   background-color: #ffd9df;
   /* 中央揃え（オーダー外） */
-  margin: auto;
+  margin: 20px auto;
   /* display inline-block */
   display: inline-block;
 }
