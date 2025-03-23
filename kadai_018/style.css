@@ -14,7 +14,7 @@
   /* 背景色#ffd9df */
   background-color: #ffd9df;
   /* 中央揃え（オーダー外） */
-  margin: 20px auto;
+  /* margin: 20px auto; */
   /* display inline-block */
   display: inline-block;
 }
