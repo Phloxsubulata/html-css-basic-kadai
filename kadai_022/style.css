@@ -1,0 +1,130 @@
+/* h1 p body の margin　を 0 */
+/* pとaのフォントサイズを20px */
+h1{
+  margin: 0px;
+}
+body{
+  margin: 0px;
+}
+p{
+  margin: 0px;
+  font-size: 20px;
+}
+a{
+  font-size: 20px;
+}
+
+/* header */
+header{
+/* 下の余白を20px */
+  margin-bottom: 20px;
+/* 背景色をrgb(244, 79, 79) */
+  background-color: rgb(244, 79, 79);
+/* 中の要素を中央揃え */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* text-align: center; */
+}
+/* h1の文字色をrgb(255, 255, 255) */
+h1{
+  color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+/* main */
+main{
+/* 余白を上下左右10px */
+margin: 10px;
+}
+/* .parentに対して display: flex;を適応 */
+#parent{
+  display: flex;
+/* justify-contentで一番右、一番左含めて均等間隔 */
+  justify-content: space-around;
+}
+/* .contentsに対して */
+.contents{
+/* 線　太さ3px 実線　色rgb(238,204,204) */
+  border: 3px solid rgb(238, 204, 204);
+/* 幅親要素の25%でflex-basisを使用 */
+  flex-basis: 25%;
+/* 要素のpaddingは上下10px 左右15px */
+  padding: 10px 15px;
+/* 要素のmarginは上下20px　左右0px */
+  margin: 20px 0px;
+/* 中の要素を中央揃え */
+  text-align: center;
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+}
+
+/* h2に対して */
+h2{
+/* フォントサイズ25px */
+  font-size: 25px;
+/* 下線　太さ3px 点線　rgb(236, 122, 122) */
+  border-bottom: 3px dotted rgb(236, 122, 122);
+}
+
+/* h2の前に「●」記号追加　rgb(239,111,139 */
+h2::before{
+  content: "●";
+  color: rgb(239,111,139);
+}
+/* .contents二番目の<p>のテキスト内の一番目の文字のみ */
+.contents p:nth-of-type(2)::first-letter{
+  /* 太字　rgb(97,206,249) */
+  font-weight: bold;
+  color: rgb(97, 206, 249);
+}
+
+/* .contentsのimgに対して */
+.contents img{
+/* marginは上下10px　左右0px */
+  margin: 10px 0px;
+/* 幅は70% */
+  width: 70%;
+}
+
+
+/* footerに対して */
+footer{
+/* 背景色はrgb(244, 79, 79) */
+  background-color: rgb(244, 79, 79);
+/* 中央揃え */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+/* <a>に対して */
+a{
+/* 文字色rgb(255,255,9) */
+  color: rgb(255, 255, 9);
+}
+a:link{
+/* 訪問済みリンクはrgb(193,234,251) */
+  color: rgb(193, 234, 251);
+}
+a:hover{
+/* マウスホバーでrgb(245,178,168) */
+  color: rgb(245, 178, 168);
+}
+
+
+/* レスポンシブデザイン対応 */
+@media screen and (max-width: 768px){
+  /* h2のフォントサイズは30px */
+  h2{
+    font-size: 30px;
+  }
+/* <p>のフォントサイズは24px */
+  p{
+    font-size: 24px;
+  }
+/* Flexboxコンテナの#parentが縦並び */
+  #parent{
+    display: block;
+  }
+}
